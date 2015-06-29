@@ -925,7 +925,7 @@ class Hello(object):
         return outstring
     @cherrypy.expose
     # N 為齒數, M 為模數, P 為壓力角
-    def mygeartest4(self , M=10, P=15,N1=15, N2=24):
+    def mygeartest4(self , M=10, P=15,N1=15, N2=24,N3=15,N4=24 ):
         outstring = '''
     <!DOCTYPE html> 
     <html>
@@ -1078,7 +1078,142 @@ class Hello(object):
         <option>79</option>
         <option>80</option>
         </select>
-
+    齒輪3齒數:<select name=N3>
+         <option selected="true">15</option>
+         <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+        <option>32</option>
+        <option>33</option>
+        <option>34</option>
+        <option>35</option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+        <option>48</option>
+        <option>49</option>
+        <option>50</option>
+        <option>51</option>
+        <option>52</option>
+        <option>53</option>
+        <option>54</option>
+        <option>55</option>
+        <option>56</option>
+        <option>57</option>
+        <option>58</option>
+        <option>59</option>
+        <option>60</option>
+        <option>61</option>
+        <option>62</option>
+        <option>63</option>
+        <option>64</option>
+        <option>65</option>
+        <option>66</option>
+        <option>67</option>
+        <option>68</option>
+        <option>69</option>
+        <option>70</option>
+        <option>71</option>
+        <option>72</option>
+        <option>73</option>
+        <option>74</option>
+        <option>75</option>
+        <option>76</option>
+        <option>77</option>
+        <option>78</option>
+        <option>79</option>
+        <option>80</option>
+        </select>
+    齒輪4齒數:<select name=N4>
+         <option>15</option>
+         <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+         <option selected="true">24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+        <option>32</option>
+        <option>33</option>
+        <option>34</option>
+        <option>35</option>
+        <option>36</option>
+        <option>37</option>
+        <option>38</option>
+        <option>39</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+        <option>48</option>
+        <option>49</option>
+        <option>50</option>
+        <option>51</option>
+        <option>52</option>
+        <option>53</option>
+        <option>54</option>
+        <option>55</option>
+        <option>56</option>
+        <option>57</option>
+        <option>58</option>
+        <option>59</option>
+        <option>60</option>
+        <option>61</option>
+        <option>62</option>
+        <option>63</option>
+        <option>64</option>
+        <option>65</option>
+        <option>66</option>
+        <option>67</option>
+        <option>68</option>
+        <option>69</option>
+        <option>70</option>
+        <option>71</option>
+        <option>72</option>
+        <option>73</option>
+        <option>74</option>
+        <option>75</option>
+        <option>76</option>
+        <option>77</option>
+        <option>78</option>
+        <option>79</option>
+        <option>80</option>
+        </select>
     <input type=submit value=send>
     </form>
 
@@ -1107,11 +1242,16 @@ class Hello(object):
     n_g1 = '''+str(N1)+'''
     # 第2齒輪齒數
     n_g2 = '''+str(N2)+'''
-
+    # 第3齒輪齒數
+    n_g3 = '''+str(N3)+'''
+    # 第4齒輪齒數
+    n_g4 = '''+str(N4)+'''
 
     # 計算兩齒輪的節圓半徑
     rp_g1 = m*n_g1/2
     rp_g2 = m*n_g2/2
+    rp_g3 = m*n_g3/2
+    rp_g4 = m*n_g4/2
 
     # 繪圖第1齒輪的圓心座標
     x_g1 = 300
@@ -1119,7 +1259,12 @@ class Hello(object):
     # 第2齒輪的圓心座標, 假設排列成水平, 表示各齒輪圓心 y 座標相同
     x_g2 = x_g1 
     y_g2 = y_g1 + rp_g1 + rp_g2
-
+    # 第3齒輪的圓心座標
+    x_g3 = x_g2 + rp_g2+rp_g3
+    y_g3 = y_g1 + rp_g1 + rp_g2
+    # 第4齒輪的圓心座標
+    x_g4 = x_g1 + rp_g2+rp_g3
+    y_g4= y_g1 + rp_g1 + rp_g2+rp_g3+rp_g4
 
     # 將第1齒輪順時鐘轉 90 度
     # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
@@ -1144,7 +1289,26 @@ class Hello(object):
     spur.Spur(ctx).Gear(x_g2, y_g2, rp_g2, n_g2, pa, "black")
     ctx.restore()
 
+    # 將第3齒輪逆時鐘轉 90 度之後, 再往回轉第2齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
+    ctx.save()
+    # translate to the origin of second gear
+    ctx.translate(x_g3, y_g3)
+    ctx.rotate(-pi/2-pi/n_g3+(pi/2+pi/n_g2)*n_g2/n_g3)
+    # put it back
+    ctx.translate(-x_g3, -y_g3)
+    spur.Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "red")
+    ctx.restore()
 
+    #齒輪4
+    ctx.save()
+    # translate to the origin of second gear
+    ctx.translate(x_g4, y_g4)
+    # rotate to engage
+    ctx.rotate(-pi/n_g4+(-pi/2+pi/n_g3)*n_g3/n_g4-(pi/2+pi/n_g2)*n_g2/n_g4)
+    # put it back
+    ctx.translate(-x_g4, -y_g4)
+    spur.Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "pink")
+    ctx.restore()
 
 
 

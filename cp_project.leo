@@ -605,7 +605,7 @@ ctx.restore()
 </t>
 <t tx=".20150628200755.1">@cherrypy.expose
 # N 為齒數, M 為模數, P 為壓力角
-def mygeartest4(self , M=10, P=15,N1=15, N2=24):
+def mygeartest4(self , M=10, P=15,N1=15, N2=24,N3=15,N4=24 ):
     outstring = '''
 &lt;!DOCTYPE html&gt; 
 &lt;html&gt;
@@ -758,7 +758,142 @@ def mygeartest4(self , M=10, P=15,N1=15, N2=24):
     &lt;option&gt;79&lt;/option&gt;
     &lt;option&gt;80&lt;/option&gt;
     &lt;/select&gt;
-
+齒輪3齒數:&lt;select name=N3&gt;
+     &lt;option selected="true"&gt;15&lt;/option&gt;
+     &lt;option&gt;16&lt;/option&gt;
+    &lt;option&gt;17&lt;/option&gt;
+    &lt;option&gt;18&lt;/option&gt;
+    &lt;option&gt;19&lt;/option&gt;
+    &lt;option&gt;20&lt;/option&gt;
+    &lt;option&gt;21&lt;/option&gt;
+    &lt;option&gt;22&lt;/option&gt;
+    &lt;option&gt;23&lt;/option&gt;
+    &lt;option&gt;24&lt;/option&gt;
+    &lt;option&gt;25&lt;/option&gt;
+    &lt;option&gt;26&lt;/option&gt;
+    &lt;option&gt;27&lt;/option&gt;
+    &lt;option&gt;28&lt;/option&gt;
+    &lt;option&gt;29&lt;/option&gt;
+    &lt;option&gt;30&lt;/option&gt;
+    &lt;option&gt;31&lt;/option&gt;
+    &lt;option&gt;32&lt;/option&gt;
+    &lt;option&gt;33&lt;/option&gt;
+    &lt;option&gt;34&lt;/option&gt;
+    &lt;option&gt;35&lt;/option&gt;
+    &lt;option&gt;36&lt;/option&gt;
+    &lt;option&gt;37&lt;/option&gt;
+    &lt;option&gt;38&lt;/option&gt;
+    &lt;option&gt;39&lt;/option&gt;
+    &lt;option&gt;40&lt;/option&gt;
+    &lt;option&gt;41&lt;/option&gt;
+    &lt;option&gt;42&lt;/option&gt;
+    &lt;option&gt;43&lt;/option&gt;
+    &lt;option&gt;44&lt;/option&gt;
+    &lt;option&gt;45&lt;/option&gt;
+    &lt;option&gt;46&lt;/option&gt;
+    &lt;option&gt;47&lt;/option&gt;
+    &lt;option&gt;48&lt;/option&gt;
+    &lt;option&gt;49&lt;/option&gt;
+    &lt;option&gt;50&lt;/option&gt;
+    &lt;option&gt;51&lt;/option&gt;
+    &lt;option&gt;52&lt;/option&gt;
+    &lt;option&gt;53&lt;/option&gt;
+    &lt;option&gt;54&lt;/option&gt;
+    &lt;option&gt;55&lt;/option&gt;
+    &lt;option&gt;56&lt;/option&gt;
+    &lt;option&gt;57&lt;/option&gt;
+    &lt;option&gt;58&lt;/option&gt;
+    &lt;option&gt;59&lt;/option&gt;
+    &lt;option&gt;60&lt;/option&gt;
+    &lt;option&gt;61&lt;/option&gt;
+    &lt;option&gt;62&lt;/option&gt;
+    &lt;option&gt;63&lt;/option&gt;
+    &lt;option&gt;64&lt;/option&gt;
+    &lt;option&gt;65&lt;/option&gt;
+    &lt;option&gt;66&lt;/option&gt;
+    &lt;option&gt;67&lt;/option&gt;
+    &lt;option&gt;68&lt;/option&gt;
+    &lt;option&gt;69&lt;/option&gt;
+    &lt;option&gt;70&lt;/option&gt;
+    &lt;option&gt;71&lt;/option&gt;
+    &lt;option&gt;72&lt;/option&gt;
+    &lt;option&gt;73&lt;/option&gt;
+    &lt;option&gt;74&lt;/option&gt;
+    &lt;option&gt;75&lt;/option&gt;
+    &lt;option&gt;76&lt;/option&gt;
+    &lt;option&gt;77&lt;/option&gt;
+    &lt;option&gt;78&lt;/option&gt;
+    &lt;option&gt;79&lt;/option&gt;
+    &lt;option&gt;80&lt;/option&gt;
+    &lt;/select&gt;
+齒輪4齒數:&lt;select name=N4&gt;
+     &lt;option&gt;15&lt;/option&gt;
+     &lt;option&gt;16&lt;/option&gt;
+    &lt;option&gt;17&lt;/option&gt;
+    &lt;option&gt;18&lt;/option&gt;
+    &lt;option&gt;19&lt;/option&gt;
+    &lt;option&gt;20&lt;/option&gt;
+    &lt;option&gt;21&lt;/option&gt;
+    &lt;option&gt;22&lt;/option&gt;
+    &lt;option&gt;23&lt;/option&gt;
+     &lt;option selected="true"&gt;24&lt;/option&gt;
+    &lt;option&gt;25&lt;/option&gt;
+    &lt;option&gt;26&lt;/option&gt;
+    &lt;option&gt;27&lt;/option&gt;
+    &lt;option&gt;28&lt;/option&gt;
+    &lt;option&gt;29&lt;/option&gt;
+    &lt;option&gt;30&lt;/option&gt;
+    &lt;option&gt;31&lt;/option&gt;
+    &lt;option&gt;32&lt;/option&gt;
+    &lt;option&gt;33&lt;/option&gt;
+    &lt;option&gt;34&lt;/option&gt;
+    &lt;option&gt;35&lt;/option&gt;
+    &lt;option&gt;36&lt;/option&gt;
+    &lt;option&gt;37&lt;/option&gt;
+    &lt;option&gt;38&lt;/option&gt;
+    &lt;option&gt;39&lt;/option&gt;
+    &lt;option&gt;40&lt;/option&gt;
+    &lt;option&gt;41&lt;/option&gt;
+    &lt;option&gt;42&lt;/option&gt;
+    &lt;option&gt;43&lt;/option&gt;
+    &lt;option&gt;44&lt;/option&gt;
+    &lt;option&gt;45&lt;/option&gt;
+    &lt;option&gt;46&lt;/option&gt;
+    &lt;option&gt;47&lt;/option&gt;
+    &lt;option&gt;48&lt;/option&gt;
+    &lt;option&gt;49&lt;/option&gt;
+    &lt;option&gt;50&lt;/option&gt;
+    &lt;option&gt;51&lt;/option&gt;
+    &lt;option&gt;52&lt;/option&gt;
+    &lt;option&gt;53&lt;/option&gt;
+    &lt;option&gt;54&lt;/option&gt;
+    &lt;option&gt;55&lt;/option&gt;
+    &lt;option&gt;56&lt;/option&gt;
+    &lt;option&gt;57&lt;/option&gt;
+    &lt;option&gt;58&lt;/option&gt;
+    &lt;option&gt;59&lt;/option&gt;
+    &lt;option&gt;60&lt;/option&gt;
+    &lt;option&gt;61&lt;/option&gt;
+    &lt;option&gt;62&lt;/option&gt;
+    &lt;option&gt;63&lt;/option&gt;
+    &lt;option&gt;64&lt;/option&gt;
+    &lt;option&gt;65&lt;/option&gt;
+    &lt;option&gt;66&lt;/option&gt;
+    &lt;option&gt;67&lt;/option&gt;
+    &lt;option&gt;68&lt;/option&gt;
+    &lt;option&gt;69&lt;/option&gt;
+    &lt;option&gt;70&lt;/option&gt;
+    &lt;option&gt;71&lt;/option&gt;
+    &lt;option&gt;72&lt;/option&gt;
+    &lt;option&gt;73&lt;/option&gt;
+    &lt;option&gt;74&lt;/option&gt;
+    &lt;option&gt;75&lt;/option&gt;
+    &lt;option&gt;76&lt;/option&gt;
+    &lt;option&gt;77&lt;/option&gt;
+    &lt;option&gt;78&lt;/option&gt;
+    &lt;option&gt;79&lt;/option&gt;
+    &lt;option&gt;80&lt;/option&gt;
+    &lt;/select&gt;
 &lt;input type=submit value=send&gt;
 &lt;/form&gt;
 
@@ -787,11 +922,16 @@ m = '''+str(M)+'''
 n_g1 = '''+str(N1)+'''
 # 第2齒輪齒數
 n_g2 = '''+str(N2)+'''
-
+# 第3齒輪齒數
+n_g3 = '''+str(N3)+'''
+# 第4齒輪齒數
+n_g4 = '''+str(N4)+'''
 
 # 計算兩齒輪的節圓半徑
 rp_g1 = m*n_g1/2
 rp_g2 = m*n_g2/2
+rp_g3 = m*n_g3/2
+rp_g4 = m*n_g4/2
 
 # 繪圖第1齒輪的圓心座標
 x_g1 = 300
@@ -799,7 +939,12 @@ y_g1 = 300
 # 第2齒輪的圓心座標, 假設排列成水平, 表示各齒輪圓心 y 座標相同
 x_g2 = x_g1 
 y_g2 = y_g1 + rp_g1 + rp_g2
-
+# 第3齒輪的圓心座標
+x_g3 = x_g2 + rp_g2+rp_g3
+y_g3 = y_g1 + rp_g1 + rp_g2
+# 第4齒輪的圓心座標
+x_g4 = x_g1 + rp_g2+rp_g3
+y_g4= y_g1 + rp_g1 + rp_g2+rp_g3+rp_g4
 
 # 將第1齒輪順時鐘轉 90 度
 # 使用 ctx.save() 與 ctx.restore() 以確保各齒輪以相對座標進行旋轉繪圖
@@ -824,7 +969,26 @@ ctx.translate(-x_g2, -y_g2)
 spur.Spur(ctx).Gear(x_g2, y_g2, rp_g2, n_g2, pa, "black")
 ctx.restore()
 
+# 將第3齒輪逆時鐘轉 90 度之後, 再往回轉第2齒輪定位帶動轉角, 然後再逆時鐘多轉一齒, 以便與第2齒輪進行囓合
+ctx.save()
+# translate to the origin of second gear
+ctx.translate(x_g3, y_g3)
+ctx.rotate(-pi/2-pi/n_g3+(pi/2+pi/n_g2)*n_g2/n_g3)
+# put it back
+ctx.translate(-x_g3, -y_g3)
+spur.Spur(ctx).Gear(x_g3, y_g3, rp_g3, n_g3, pa, "red")
+ctx.restore()
 
+#齒輪4
+ctx.save()
+# translate to the origin of second gear
+ctx.translate(x_g4, y_g4)
+# rotate to engage
+ctx.rotate(-pi/n_g4+(-pi/2+pi/n_g3)*n_g3/n_g4-(pi/2+pi/n_g2)*n_g2/n_g4)
+# put it back
+ctx.translate(-x_g4, -y_g4)
+spur.Spur(ctx).Gear(x_g4, y_g4, rp_g4, n_g4, pa, "pink")
+ctx.restore()
 
 
 
